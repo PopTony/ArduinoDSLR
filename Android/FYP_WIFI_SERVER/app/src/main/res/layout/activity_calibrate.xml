@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tonylu.fyp_wifi_server.CalibrateActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#500000FF"
+        android:orientation="horizontal"
+
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="State:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/clientStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Client" />
+
+        <TextView
+            android:id="@+id/USBStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="USB" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="ShutterSpeed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="725dp" />
+
+    <SeekBar
+        android:id="@+id/ShutterSpeed"
+
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:max="51"
+        android:progress="30"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="781dp" />
+
+    <TextView
+        android:id="@+id/shutterSpeedValue"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="855dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="FNumber"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <SeekBar
+        android:id="@+id/fNumber"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:max="15"
+        android:progress="8"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <TextView
+        android:id="@+id/FNumberValue"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="513dp" />
+
+</LinearLayout>
